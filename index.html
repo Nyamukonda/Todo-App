@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Todo App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="tip-box ani" id="tip-box">
+        <button class="close-tip" id="tip-close">X</button>
+        <p class="welcome">Welcome</p>
+        <ol>
+            <li class="tip">Add your new task in the input box and press enter or click the Add button.</li>
+            <li class="tip">You can mark task as completed by clicking on it.</li>
+            <li class="tip">click the <code>X</code> button to remove task.</li>
+        </ol>
+        
+    </div>
+    <div class="container">
+        <div id="myDiv" class="header">
+            <h2>Todo APP<span id="tasks">0</span><span>Tasks</span> </h2>
+            <form id="myForm">
+                <input type="text" id="myInput" placeholder="E.g create an app...">
+                <button onclick="newElement()" class="btnAdd">Add</button>
+            </form>
+            
+        </div>
+        <ul id="myUl">
+            
+        </ul>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
